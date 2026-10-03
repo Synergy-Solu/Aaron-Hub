@@ -1,0 +1,1049 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    position: relative;
+}
+:root {
+    --gold: rgba(233, 111, 11, 0.877);
+}
+.gold {
+    color: var(--gold);
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    top: 0;
+    position: sticky;
+    background-color: rgb(201, 201, 201);
+    z-index: 10;
+}
+nav img {
+    width: 2em;
+}
+nav ul {
+    align-items: center;
+}
+#szsbtn {
+    padding: 5px 30px;
+    corner-shape: squircle;
+    border-radius: 2em;
+    border: 1px solid  var(--gold);
+    background: none;
+} 
+.navimg {
+    display: none;
+}
+nav li:hover {
+    cursor: pointer;
+}
+.logo {
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+a {
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    text-decoration: none;
+}
+.cart img {
+   width: 2em;
+}
+.cart {
+    position: relative;
+}
+#cartnum {
+    display: flex;
+    align-items: center;
+    justify-content: center    ;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background-color: var(--gold);
+    padding: 4px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
+section {
+    background-color: rgb(209, 209, 209);
+}
+
+.herosec {
+    background-image: url(images/IMG-20260919-WA8854.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+.herosec h1 {
+    font-size: 4em;
+}
+.herosec button, .major {
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gold);
+    margin-top: 2em;
+    transition: 0.5s ease-in-out;
+    border: 1px solid  var(--gold);
+
+}
+.herosec button:hover {
+    padding: 10px 30px;
+    corner-shape: squircle;
+    border-radius: 2em;
+    border: 1px solid  var(--gold);
+    background: none;
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(160, 156, 155, 0.205);
+    padding: 3em 2em;
+}
+.qualities {
+    margin-top: 9em;
+    display: flex;
+    width: 65%;
+}
+.qualities > div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+.qualities > :not(:first-child) {
+    border-left: 1px solid var(--gold);
+}
+.image img {
+    border-radius: 50%; 
+    margin-right: 10px;
+    width: 5em;
+}
+.sec2 {
+    padding: 1em 2em;
+    background-color: rgb(209, 209, 209);
+}
+.collection {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    
+}
+.catcard {
+    border-radius: 1em;
+    width: 20%;
+    height: 15em;
+    background-position: center;
+    background-size: cover;
+    /*box-shadow: 1px 2px 0.9px ;*/
+}
+.catcard:hover .catcover {
+    background: rgba(56, 55, 55, 0.459);
+}
+.catcard:hover .catcover h5 {
+    color: white;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    background: rgba(61, 60, 60, 0);
+}
+.c1 {
+    background-image: url(images/IMG-20260919-WA0470.jpg);
+}
+.c2 {
+    background-image: url(images/IMG-20260921-WA9387.jpg);
+}
+.c3 {
+    background-image: url(images/IMG-20260919-WA7163.jpg);
+}
+.c4 {
+    background-image: url(images/IMG-20260919-WA6647.jpg);
+}
+.c5 {
+background-image: url(images/IMG-20260919-WA0156.jpg);
+}
+.c6 {
+    background-image: url(images/IMG-20260921-WA8432.jpg);    
+}
+.c7 {
+    background-image: url(images/IMG-20260919-WA7714.jpg) ;
+}
+.c8 {
+    background-image: url(images/IMG-20260919-WA5037.jpg);
+}
+.catcover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    border-radius: 1em;
+    
+}
+.catcover h5 {
+    position: absolute;
+    padding: 5px;
+    border-radius: 0px 10px 10px 10px;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    font-weight: 500;
+    background: rgba(61, 60, 60, 0.829);
+}
+.sec3 {
+    padding: 1em 2em;
+    background-color: rgb(209, 209, 209);
+}
+
+.item, .feat {
+    corner-shape: squircle;
+    height: 20em;
+    width: 13%;
+    background-color: white;
+    border-radius: 1em;
+    transition: 1s ease-in-out;
+}
+.itimg {
+    height: 55%;
+    width: 100%;
+    corner-shape: squircle;
+    border-radius: 1em;
+}
+.ittxt {
+    height: 45%;
+    width: 100%;
+    background-color: rgb(240, 212, 190);
+    corner-shape: squircle;
+    border-radius: 1em;
+    padding: 10px 5px;
+}
+/*items*/
+
+.itimg {
+    background-position: center;
+    background-size: cover;
+}
+/*f*/
+.f1 {
+    background-image: url(images/IMG_0647.JPG);
+}
+.f2 {
+    background-image: url(images/IMG_0646.JPG);
+}
+.f3 {
+    background-image: url(images/IMG_0649.JPG);
+}
+.f4 {
+    background-image: url(images/IMG_0650.JPG);
+}
+.f5 {
+    background-image: url(images/IMG_0686.JPG);
+}
+.f6 {
+    background-image: url(images/IMG_0685.JPG);
+}
+.f7 {
+    background-image: url(images/IMG_0677.JPG);
+}
+.f8 {
+    background-image: url(images/IMG_0684.JPG);
+}
+.f9 {
+    background-image: url(images/IMG_0683.JPG);
+}
+.f10 {
+    background-image: url(images/IMG_0673.JPG);
+}
+.f11 {
+    background-image: url(images/IMG_0661.JPG);
+}
+.f12 {
+    background-image: url(images/IMG_0682.JPG);
+}
+.f13 {
+    background-image: url(images/IMG_0653.JPG);
+}
+.f14 {
+    background-image: url(images/IMG_0656.JPG);
+}
+.f15 {
+    background-image: url(images/IMG_0667.JPG);
+}
+.f16 {
+    background-image: url(images/IMG_0666.JPG);
+} 
+.f17 {
+    background-image: url(images/IMG_0678.JPG);
+}
+.f18 {
+    background-image: url(images/IMG_0681.JPG);
+}
+.f19 {
+    background-image: url(images/IMG_0679.JPG);
+}
+.f20 {
+    background-image: url(images/IMG_0672.JPG);
+}
+.f21 {
+    background-image: url(images/IMG_0680.JPG);
+}
+.f22 {
+    background-image: url(images/IMG_0676.JPG);
+}
+.f23 {
+    background-image: url(images/IMG_0674.JPG);
+}
+.f24 {
+    background-image: url(images/IMG_0671.JPG);
+}
+.f25 {
+    background-image: url(images/IMG_0675.JPG);
+}
+.f26 {
+    background-image: url(images/IMG_0669.JPG);
+}
+.f27 {
+    background-image: url(images/IMG_0670.JPG);
+}
+.f28 {
+    background-image: url(images/IMG_0668.JPG);
+}
+.f29 {
+    background-image: url(images/IMG_0663.JPG);
+}
+.f30 {
+    background-image: url(images/IMG_0655.JPG);
+}
+.f31 {
+    background-image: url(images/IMG_0654.JPG);
+}
+.f32 {
+    background-image: url(images/IMG_0659.JPG);
+}
+.f33 {
+    background-image: url(images/IMG_0652.JPG);
+}
+.f34 {
+    background-image: url(images/IMG_0657.JPG);
+}
+.f35 {
+    background-image: url(images/IMG_0651.JPG);
+}
+.f36 {
+    background-image: url(images/IMG_0662.JPG);
+}
+.f37 {
+    background-image: url(images/IMG_0665.JPG);
+}
+.f38 {
+    background-image: url(images/IMG_0658.JPG);
+}
+.f39 {
+    background-image: url(images/IMG_0664.JPG);
+}
+.f40 {
+    background-image: url(images/IMG-20260921-WA2183.jpg);
+}
+.f41 {
+    background-image: url(images/IMG-20260921-WA2010.jpg);
+}
+.f42 {
+    background-image: url(images/IMG-20260921-WA1828.jpg);
+}
+.f43 {
+    background-image: url(images/IMG-20260921-WA1717.jpg);
+}
+.f44 {
+    background-image: url(images/IMG-20260921-WA1595.jpg);
+}
+.f45 {
+    background-image: url(images/IMG-20260921-WA1243.jpg);
+}
+.f46 {
+    background-image: url(images/IMG-20260921-WA1535.jpg);
+}
+.f47 {
+    background-image: url(images/IMG-20260921-WA0926.jpg);
+}
+.f48 {
+    background-image: url(images/IMG-20260921-WA3355.jpg);
+}
+.f49 {
+    background-image: url(images/IMG_0660.JPG);
+}
+.f18 {
+    background-image: ;
+}
+.f18 {
+    background-image: ;
+}
+.f18 {
+    background-image: ;
+}
+.f18 {
+    background-image: ;
+}
+.f18 {
+    background-image: ;
+}
+
+
+/*e*/
+.e1 {
+    background-image: url(images/IMG-20260919-WA3346.jpg);
+}
+
+.e2 {
+    background-image: url(images/IMG-20260919-WA0470.jpg);
+}
+.e3 {
+    background-image: url(images/IMG-20260919-WA3568.jpg);
+}
+.e4 {
+    background-image: url(images/a.jpeg);
+}
+.e5 {
+    background-image: url(images/IMG-20260921-WA9219.jpg);
+}
+.e6 {
+    background-image: url(images/IMG-20260921-WA8022.jpg);
+}
+.e7 {
+    background-image: url(images/IMG-20260921-WA7331.jpg);
+}
+.e8 {
+    background-image: url(images/IMG-20260921-WA6193.jpg);
+}
+.e9 {
+    background-image: url(images/a.jpg);
+}
+.e10 {
+    background-image: url(images/c.jpg);
+}
+.e11 {
+    background-image: url(images/abc.jpg);
+}
+.e12 {
+    background-image: url(images/IMG-20260921-WA0012.jpg);
+}
+.e13 {
+    background-image: url(images/IMG-20260921-WA0227.jpg);
+}
+.e14 {
+    background-image: url(images/IMG-20260921-WA9387.jpg);
+}
+.e15 {
+    background-image: url(images/IMG-20260921-WA9148.jpg);
+}
+.e16 {
+    background-image: url(images/IMG-20260921-WA8618.jpg);
+}
+.e17 {
+    background-image: url(images/IMG-20260921-WA6849.jpg);
+}
+.e18 {
+    background-image: url(images/IMG-20260921-WA5533.jpg);
+}
+.e19 {
+    background-image: url(images/IMG-20260921-WA5388.jpg);
+}
+.e20 {
+    background-image: url(images/IMG-20260921-WA5285.jpg);
+}
+.e21 {
+    background-image: url(images/IMG-20260921-WA5263.jpg);
+}
+.e22 {
+    background-image: url(images/IMG-20260921-WA3894.jpg);
+}
+.e23 {
+    background-image: url(images/IMG-20260921-WA3890.jpg);
+}
+.e24 {
+    background-image: url(images/IMG-20260921-WA3607.jpg);
+}
+.e27 {
+    background-image: url(images/IMG-20260921-WA2648.jpg);
+}
+.e28 {
+    background-image: url(images/IMG-20260921-WA2367.jpg);
+}
+.e29 {
+    background-image: url(images/IMG-20260921-WA2268.jpg);
+}
+.e30 {
+    background-image: url(images/IMG-20260921-WA0875.jpg);
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+.e19 {
+    background-image: ;
+}
+#add, .shop {
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gold);
+    margin-top: 7%;
+    transition: 0.5s ease-in-out;
+    border: 1px solid  var(--gold);
+    
+}
+#buy {
+    padding: 8px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gold);
+    margin-top: 7%;
+    transition: 0.5s ease-in-out;
+    border: 1px solid  var(--gold);
+}
+.itemcol {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec4 {
+    gap: 10px;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.sec4 >div {
+    width: 45%;
+    border: 1px solid var(--gold);
+    border-radius: 1em;
+    padding: 1em;
+    background-position: center;
+    background-size: cover;
+}
+.left {
+    background-image: url(images/IMG-20260920-WA3979.jpg);
+    color: white;
+}
+.right {
+    background-image: url(images/IMG-20260920-WA5344.jpg);
+}
+.sec4 p {
+    width: 40%;
+}
+.sec5 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0em 2em;
+}
+.sec5 h2 {
+    top: 10px;
+    position: absolute;
+}
+.brands {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+.brands img {
+    width: 9%;
+}
+footer {
+    justify-content: space-between;
+    display: flex;
+    background-color: black;
+    padding: 1em 2em;
+    color: white;
+}
+footer .logo {
+    margin-bottom: 10px;
+}
+footer ul {
+    flex-direction: column;
+    line-height: 1.5em;
+    gap: 0px;
+}
+footer a {
+    color: rgb(189, 186, 186);
+}
+.a1 {
+    width: 27%;
+}
+.socials {
+    margin-top: 10px ;
+    display: flex;
+    gap: 10px;
+}
+.socials img {
+    width: 1.5em;
+}
+.al {
+    margin-top: 4%; 
+}
+.al img {
+    width: 7em;
+}
+.al h6 {
+    margin-bottom: 10px;
+}
+.me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h5, footer p {
+    color: grey;
+}
+
+
+
+/*ELECTRONICS*/
+.cat {
+    
+    padding: 4.5em 10px 10px 10px;
+    background-color: rgb(185, 183, 183);
+}
+.cat button {
+    color: black;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gold);
+    transition: 0.5s ease-in-out;
+    border: 1px solid  var(--gold);
+    margin-top: 10px;
+}
+.cat .active {
+    padding: 5px 15px;
+    corner-shape: squircle;
+    border-radius: 2em;
+    border: 1px solid  var(--gold);
+    background: none;
+    margin-top: 10px;
+}
+.elec {
+    width: 100%;
+    border: 1px solid var(--gold);
+    border-radius: 1em;
+    padding: 1em;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/IMG-20260921-WA4488.jpg);
+}
+.elec p {
+    width: 20%;
+}
+.el {
+    padding: 1em 2em;
+    display: flex;
+    color: rgb(248, 246, 246);
+}
+.el h2 {
+    font-size: 2em;
+}
+.el button {
+    margin-top: 2%;
+}
+.fash {
+    background-image: url(images/IMG-20260921-WA6370.jpg);
+    color: rgb(102, 104, 104);
+}
+
+
+
+/*Price card*/
+.card {
+    /*width: 80%;
+    padding: 1em;
+    */
+    height: 80vh;
+    z-index: 8;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.651);
+    backdrop-filter: blur(5px);
+    border-radius: 2em;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.cimg {
+    background-color: rgba(255, 255, 255, 0.185);
+    box-shadow: 0px 0px 5px var(--gold);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 80%;
+    /*background-image: url(images/IMG-20260921-WA4717.jpg);*/
+    border-radius: 2em;
+}
+.ctxt {
+    width: 40%;
+    position: relative;
+    margin-top: 4em;
+}
+.btns {
+    bottom: 5em;
+    position: absolute;
+}
+.card p {
+    margin-top: 10px;
+}
+.ctxt label {
+    font-weight: bold;
+}
+.ctxt h3 {
+    font-size: 2.5em;
+}
+.card button {
+    margin-right: 10px;
+}
+.card hr {
+    border: none;
+    border: 2px solid var(--gold);
+    width: 20%;
+}
+.card h2 {
+    position: absolute;
+    bottom: 1em;
+    background-color: var(--gold);
+    width: fit-content;
+    padding: 2px 10px;
+    color: white;
+    border-radius: 8px;
+}
+.card label {
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(236, 142, 65);
+    border-radius: 10px;
+}
+.radios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+#close {
+    position: absolute;
+    width: 2em;
+}
+
+/*cart*/
+.cartsec {
+    top: 0;
+    right: -50%;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgb(245, 238, 224);
+    padding: 2em 0em;
+    overflow-y: scroll;
+    transition: 0.5s ease-in-out;
+}
+.cartsec h3 {
+    text-align: center;
+}
+.cartsec button {
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color:rgba(233, 111, 11, 0.521);
+    margin-top: 7%;
+    transition: 0.5s ease-in-out;
+    border: 1px solid  var(--gold);
+    backdrop-filter: blur(5px);
+    
+}
+.new {
+    height: 5em;
+    width: 100%;
+    border: 1px solid var(--gold);
+    margin-top: 5px;
+    padding: 2px 1em;
+    display: flex;
+}
+.crtimg {
+    width: 15%;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-image: url(images/IMG-20260921-WA8843.jpg);
+}
+.crtactbtns {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.crttxt {
+    text-align: center;
+    width: 60%;
+}
+.back {
+    
+    /*margin-left: 10px;*/
+    position: absolute;
+    width: 3em;
+    height: 1em;
+    border-radius: 0em 1em 1em 0em;
+    background-color: var(--gold);
+    corner-right-shape: bevel;
+}
+.cartsec hr {
+    border: none;
+    border: 0.8px solid rgb(114, 113, 113);
+    margin-top: 10px;
+}
+.tl {
+    display: flex;
+    justify-content: space-between;
+}
+.add {
+     padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gold);
+    margin-top: 7%;
+    transition: 0.5s ease-in-out;
+    border: 1px solid  var(--gold)
+}
+.rem {
+     padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color:rgba(245, 134, 43, 0.521);
+    margin-top: 7%;
+    transition: 0.5s ease-in-out;
+    border: 1px solid  var(--gold);
+    backdrop-filter: blur(5px);
+}
+
+
+
+.electronicsi, .fashionii {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0em;
+    background-color: rgb(255, 210, 168);
+    overflow-y: scroll;
+}
+.out {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 7em;
+    color: grey;
+}
+#shirtsize {
+    display: none;
+}
+.size {
+    border-radius: 2em;
+    background-color: black;
+    color: white;
+    align-items: center;
+    border: 1px solid var(--gold);
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.size input[type ="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    background-color: white;
+}
+.size input[type ="radio"]:checked {
+    background-color: var(--gold);
+    border: none;
+}
+.size p {
+    margin-bottom: 2em;
+    color: rgb(184, 169, 164);
+    text-align: center;
+}
+.size span {
+    font-weight: bold;
+}
+
+
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+         position: fixed;
+         background-color: rgb(233, 109, 7);
+        top: 3.5em;
+        left: 0;
+        width: 50%;
+        top: -100%;
+        padding: 1em;
+        border-radius: 0px 20px 15px 0px;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        z-index: 15;
+    }
+    .navimg {
+    display: inline-block;
+    }
+    #closemenu {
+        display: none;
+    }
+    nav li {
+        margin-top: 10px;
+    }
+    .qualities {
+    display: none;
+    }
+    .herosec button {
+        margin-top: 10em; 
+    }
+    .collection {
+        flex-wrap: wrap;
+    }
+    .collection > div {
+        width: 48%;
+    }
+    .home {
+        padding: 0 5px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+    .home > div {
+        flex: 0 0 11em;
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .aside {
+        width: 100%;
+        
+    }
+    footer ul {
+       padding-left: 0px;  
+    }
+    .sec4 {
+        flex-direction: column;
+    }
+    .sec4 > div {
+        width: 100%;
+    }
+    .sec5 {
+        height: fit-content;
+        padding-top: 2em;
+    }
+    .a1 {
+    width: 100%;
+    }
+    .card {
+        height: 70vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5em;
+        text-align: center;
+        
+    }
+    .ctxt h2 {
+       bottom: 10px;
+    }
+    .cimg {
+        height: 65%;
+        width: 90%;
+        position: relative;
+    }
+    .ctxt {
+        width: 100%;
+        margin-top: 10px;
+        height: 35%;
+    } 
+    .fashi {
+        padding: 1em 5px;
+    }
+    #close {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    width: 2em;
+    }
+    .btns {
+    bottom: 0;
+    position: relative;
+    }
+    #szsbtn {
+        border: 2px solid black;
+        background-color: rgb(228, 112, 5);
+        color: white;
+    }
+ 
+}
+
+

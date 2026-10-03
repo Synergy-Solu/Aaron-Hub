@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Hub</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/JOML7694.PNG" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <nav>
+          <div class="navimg"><img src="images/102109-200.png" alt="menu icon" id="menu" onclick="showMenu()"> <img src="images/261420-200.png " alt="Close menu icon" id="closemenu" onclick="closeMenu()"></div>
+            <div class="logo">
+                AARON <span class="gold">HUB</span>
+                <h6>TECH &bull; FASHION &bull; LIFESTYLE</h6>
+            </div>
+
+            <ul>
+                <a onclick="closePage()"><li>Home</li></a>
+                <a onclick="openPage()"><li>Electronics</li></a>
+                <a onclick="opFashPg()"><li>Fashion</li></a>
+                <a href="#"><li>Deals</li></a>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Videos</li></a>
+                <li><button id="szsbtn" onclick="shftsz()">SIZES</button></li>
+            </ul>
+           <!-- <div class="cart">
+              <img src="images/GFCG5160.PNG" alt="" onclick="openCart()">
+                <div id="cartnum" class="cartnum">0</div>
+            </div>-->
+           <a href="http://wa.me/233599728595" target="_blank" rel="noopener noreferrer"><img src="images/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="whatsapp image" ></a> 
+        </nav>
+
+        <section class="herosec">
+            <div class="cover">
+                <div class="txt">
+                  <h5>WELCOME TO AARON HUB</h5>  
+                  <h1>Everything You Need <br>
+                  <span class="gold">All In One Place</span></h1>
+                  <p>Top quality electronics, trendy fashion and more</p>
+                  <p>shop smart. Live better</p>
+                  <button>WATCH VIDEOS</button>
+                  <a href="#feature"><button>Shop Now</button></a>
+
+                  <div class="qualities">
+                <div>
+                    <div class="image"><img src="images/IMG-20260917-WA3664.jpg" alt=""></div>
+                    <div class="text">
+                        <h4>Instant Delivery</h4>
+                        Product within quickly
+                    </div>
+                </div>
+             <div>
+                    <div class="image"><img src="images/IMG-20260917-WA2932.jpg" alt=""></div>
+                    <div class="text">
+                        <h4>Best Prices</h4>
+                        Premium quality at affordable rates
+                    </div>
+                </div>
+             <div>
+                    <div class="image"><img src="images/IMG-20260917-WA2932.jpg" alt=""></div>
+                    <div class="text">
+                        <h4>24/7 Support</h4>
+                        We're always here to help you
+                    </div>
+                </div>
+            </div>
+                </div>
+                
+            </div>
+        </section>
+         <section class="sec2">
+            <h4>Shop by category</h4>
+            <div class="collection">
+
+                <div class="catcard c1" onclick="openPage">
+                <div class="catcover">
+                  <h5>Phones and tablets</h5>
+                </div>
+                </div>
+
+                  <div class="catcard c2" onclick="openPage()">
+                <div class="catcover">
+                  <h5>Audio and Accesories</h5>
+                </div>
+                </div>
+
+                  <div class="catcard c3" onclick="openPage()">
+                <div class="catcover">
+                  <h5>Gaming</h5>
+                </div>
+                </div>
+                
+                 <!-- <div class="catcard c4">
+                <div class="catcover">
+                  <h5>Laptops and Computers</h5>
+                </div>
+                </div>
+
+                  <div class="catcard c5">
+                <div class="catcover">
+                  <h5>Smart watches</h5>
+                </div>
+                </div>
+                -->
+                  <div class="catcard c6"onclick="showFashCap()">
+                <div class="catcover">
+                  <h5>Caps</h5>
+                </div>
+                </div>
+
+                  <div class="catcard c7" onclick="showFashTop()">
+                <div class="catcover">
+                  <h5>T - Shirts</h5>
+                </div>
+                </div>
+
+                  <div class="catcard c8" onclick="showFashFoot()">
+                <div class="catcover">
+                  <h5>Footwear</h5>
+                </div>
+                </div>
+              
+            </div>
+         </section>
+
+           <section class="sec3" id="feature">
+            <h4>Featured Products</h4>
+            <div class="collection itemcol home">
+
+               <div class="feat">
+                <div class="itimg f1" onclick="openCard('X -Slides', 'black Leather', '250', 'images/IMG_0647.JPG',)">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X - Slides</h4>
+                  <br>
+                  <h4 class="price">GH 250.00</h4>
+                 <center><!--<button  class="add" onclick="addItem('images/IMG_0647.JPG', 'X - Slides', '250', this)">Add to cart</button>--><button id="buy" onclick="order('X -Slides', 'black Leather', '250')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f2" onclick="openCard('X - Slides', 'shade of green haIry leather', '250', 'images/IMG_0646.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X -Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250.00</h4>
+                 <center><!--<button  class="add" onclick="addItem('images/IMG_0646.JPG', 'X - Slides', '250', this)">Add to cart</button>--><button id="buy" onclick="order('X - Slides', 'shade of green haIry leather', '250', 'images/IMG_0646.JPG')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f15" onclick="openCard('Cap', '(all eyes on me) blue + white', '50', 'images/IMG_0667.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button  class="add" onclick="addItem('images/IMG_0667.JPG', 'cap', '50', this)">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', '(all eyes on me) blue + white', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f3" onclick="openCard('X-Slides', 'very comfy', '250', 'images/IMG_0649.JPG', this )">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X-Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250.00</h4>
+                 <center><!--<button id="add" onclick="addItem('images/IMG_0649.JPG', 'X-Slides', '200', this)">Add to cart</button>--><button id="buy" onclick="order('X-Slides', 'very comfy', '250')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f30" onclick="openCard('bracelet', 'Silver fashion', '15', 'images/IMG_0655.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bracelet</h4>
+                  <br>
+                  <h4 class="price">GHS 15.00</h4>
+                 <center><!--<button id="add" onclick="addItem()">Add to cart</button>--><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f23" onclick="openCard('Birkenstock', 'Black Lux', '500', 'images/IMG_0674.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Black Birkenstock</h4>
+                  <br>
+                  <h4 class="price">GHS 500.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('Birkenstock', 'Black Lux', '500')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f20" onclick="openCard('Numeris Shoe`', 'Perfect Fit', '450', 'images/IMG_0672.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Numeris Shoe</h4>
+                  <br>
+                  <h4 class="price">GHS 450.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('Numeris Shoe`', 'Perfect Fit', '450')">By Now</button></center> 
+                </div>
+               </div>
+             
+                  <div class="feat">
+                <div class="itimg f4" onclick="openCard('X-Slides', 'comfortable to wear','250', 'images/IMG_0650.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X-Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('X-Slides', 'comfortable to wear','250')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f18" onclick="openCard('Polo - Shirt', 'pink Polo', '150', 'images/IMG_0681.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">POLO-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('Polo - Shirt', 'pink Polo', '150' )">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="feat">
+                <div class="itimg f5" onclick="openCard('POLO - Shirt', 'grey polo', '150', 'images/IMG_0686.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">POLO - Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('POLO - Shirt', 'grey polo', '150')"">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f19" onclick="openCard('HACKETT - Shirt', 'red hackett', '150', 'images/IMG_0679.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">HACKETT-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('HACKETT - Shirt', 'red hackett', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="feat">
+                <div class="itimg f14" onclick="openCard('Bag', 'Fashion Bag', '200', 'images/IMG_0656.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 200.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Bag', 'Fashion Bag', '200')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="feat">
+                <div class="itimg f6" onclick="openCard('POLO -Shirt', 'red polo', '150', 'images/IMG_0685.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">POLO-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('POLO -Shirt', 'red polo', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="feat">
+                <div class="itimg f22" onclick="openCard('Birkenstock', 'Blue Lux', '500', 'images/IMG_0676.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Blue Birkenstock</h4>
+                  <br>
+                  <h4 class="price">GHS 500.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('Birkenstock', 'Blue Lux', '500')">By Now</button></center> 
+                </div>
+               </div>
+
+            </div>
+         </section>
+
+         <section class="sec4">
+          <div class="left">
+            <h5 class="gold">LATEST TECH . BEST BRANDS</h5>
+            <h2>Upgrade</h2>
+            <h2>Your <span class="gold">Tech</span></h2>
+            <p>Get the latest phones, laptops, accessories and more</p>
+            <button class="shop" onclick="openPage()">Shop Electronics</button>
+          </div>
+          <div class="right">
+               <h5 class="gold">TRENDY . QUALITY . YOU</h5>
+            <h2>Fashion That</h2>
+            <h2>Fits <span class="gold"> Your Vibe</span></h2>
+            <p>From casual to classy, find your perfect look</p>
+           <button class="shop"onclick="opFashPg() ">Shop Fashion</button>
+         </section>
+
+         <section class="sec5">
+          <h2>Top Brands</h2>
+          <div class="brands">
+            <img src="images/IMG-20260920-WA9006.jpg" alt="chromehearts logo">
+            <img src="images/IMG-20260920-WA8217.jpg" alt="nike logo">
+            <img src="images/HCSI0074.WEBP" alt="numeris logo">
+            <img src="images/IMG-20260920-WA4206.jpg" alt="adidas logo">
+            <img src="images/IMG-20260920-WA2628.jpg" alt="zara logo">
+            <img src="images/IMG-20260920-WA0106.jpg" alt="goyard logo">
+            <img src="images/LRMJ6963.WEBP" alt="crocs logo">
+            <img src="images/LLUB1666.WEBP" alt="hackett logo">
+            <img src="images/BPMZ8721.WEBP" alt="birkenstock logo">
+            <img src="images/TMUS9993.WEBP" alt="polo logo">
+           
+          </div>
+        
+         </section>
+
+         <footer>
+          <aside class="a1">
+             <div class="logo">
+               <h2>AARON <span class="gold">HUB</span></h2> 
+                <h6>TECH &bull; FASHION &bull; LIFESTYLE</h6>
+                </div>
+                <p>Aaron Hub is your one-stop shop for elctronics, fashion and more. Quality products, 
+                  trusted brands, and unbeatable prices 
+                </p>
+
+          <div class="socials">
+            <img src="images/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="">
+            <img src="images/instagram-logo-png-transparent-background-1024x1024-1.png" alt="">
+            <img src="images/gmail-mail-icon-for-web-design-free-png.png" alt="">
+            <img src="images/8dcc7cecbacd2ad8d207d9025000e1ec.jpg" alt="">
+            <img src="" alt="">
+          </div>
+             </aside>
+          <aside>
+            <ul>
+              <h4>Quick Links</h4>
+              <a href="#"><li>Home</li></a>
+              <a href="#feature"><li>Shop</li></a>
+              <a href="#"><li>About Us</li></a>
+              <a href="#"><li>Videos</li></a>
+              <a href="#"><li>FAQs</li></a>
+            </ul>
+          </aside>
+          <aside>
+             <ul>
+              <h4>Categories</h4>
+              <a href="#"><li onclick="openPage()">Electronics</li></a>
+              <a href="#"><li onclick="openPage()">Phones & Tablets</li></a>
+              <a href="#"><li onclick="openPage()">Laptops & Computers</li></a>
+              <a href="#"><li onclick="openPage()">Accessories</li></a>
+              <a href="#"><li onclick="opFashPg()">Fashion</li></a>
+              <a href="#"><li onclick="showFashFoot()">Footwear</li></a>
+            </ul>
+          </aside>
+          <aside>
+             <ul>
+              <h4>Quick Links</h4>
+              <a href="#"><li>Track Order</li></a>
+              <a href="#"><li>Return & Refund</li></a>
+              <a href="#"><li>Terms & Conditions</li></a>
+              <a href="#"><li>Privacy Policy</li></a>
+            </ul>
+          </aside>
+          <aside class="al">
+            <h6>&copy;2025 Aaron Hub, All rights reserved.</h6>
+            <div class="me"><h5>POWERED BY</h5> <img src="images/file_00000000525c822fb92fd01c8632b831.png" alt=""></div>
+          </aside>
+         </footer>
+
+         <div class="card">
+          <div class="ctxt">
+            <h3 id="name">CROCS <hr></h3>
+            <p id="description">This is a very nice crocs for all genders. Fits the legs perfectly providing a comfortabl
+              feel and experience.
+            </p>
+            <center><h2>GH <span id="price">200</span></h2></center>
+            
+            
+             <div class="btns"><center><!--<button id="add" onclick="addItem()">Add to cart</button><button id="buy" onclick="order( )">By Now</button></center>--></div> 
+          </div>
+          <div class="cimg">
+            
+          </div>
+          <img src="images/1766.png" alt="" id="close" onclick="closeCard()">
+         </div>
+
+         <div class="cartsec">
+          <div class="back" onclick="closeCart()"></div>
+          <h3>YOUR CART</h3>
+          <div class="cartitems">
+
+               <!--<div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>  
+
+              <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+
+               <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+
+               <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+
+               <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+
+               <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+
+               <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+
+               <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+
+               <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+
+               <div class="new">
+                <div class="crtimg">
+
+                </div>
+                <div class="crttxt">
+                  <h3 class="crtname"> sweater</h3>
+                  <h3>GH <span class="crtprice">80</span></h3>
+                </div>
+                <div class="crtactbtns">
+                  <button class="dec">-</button> <h4 class="num">4</h4><button class="inc">+</button>
+                </div>
+              </div>
+            -->
+
+          </div>
+          <hr>
+          <div class="tl"><h2>TOTAL: </h2><h2> GH <span class="tot">0.00  </span></h2></div>
+          
+         <div class="botbtn">
+          <center><button>checkout</button></center>
+          </div>
+         </div>
+    </main>
+
+
+
+
+    <div class="electronicsi">
+    <!--          <div class="cat">
+            <h4>Categories</h4>
+            <button id="active" onclick="alli()">All</button>
+            <button onclick="showPhone()">Smartphones</button>
+            <button>Gaming</button>
+            <button>Accessories</button>
+            <button>Audio & Headphones</button>
+        </div>
+    
+     <section class="sec3 ">
+            <h4>ELECTRONICS  </h4>
+            <div class="collection itemcol electro">
+
+               <div class="item">
+                <div class="itimg e8">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e3">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e12">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Television</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone" >
+                <div class="itimg e7" >
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Nike shoe</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone">
+                <div class="itimg e2" >
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">I-Phone 15</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item" >
+                <div class="itimg e5" onclick="openCard('Iphone 15', 'stylish', '7000', 'images/IMG-20260919-WA0470.jpg')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Smart watch</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e6" >
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Samsung Phone</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+             
+                  <div class="item phone">
+                <div class="itimg e4">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item ">
+                <div class="itimg e1" >
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item phone">
+                <div class="itimg e10" >
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone">
+                <div class="itimg e11" >
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item phone">
+                <div class="itimg e9" >
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone">
+                <div class="itimg e13" >
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item phone">
+                <div class="itimg e15">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+               <div class="item">
+                <div class="itimg e14">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone">
+                <div class="itimg e16">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone">
+                <div class="itimg e17">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Television</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone">
+                <div class="itimg e18">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Nike shoe</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone">
+                <div class="itimg e19">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">I-Phone 15</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e20">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Smart watch</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e21">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Samsung Phone</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+             
+                  <div class="item phone">
+                <div class="itimg e22">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e23">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item phone">
+                <div class="itimg e24">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e27">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item">
+                <div class="itimg e28">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item phone">
+                <div class="itimg e29">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item">
+                <div class="itimg e30">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+               <div class="item">
+                <div class="itimg e31">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e32">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e33">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Television</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e34">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Nike shoe</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e35">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">I-Phone 15</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e36">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Smart watch</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg e37">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Samsung Phone</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+             
+                  <div class="item">
+                <div class="itimg i1">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg i2">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item">
+                <div class="itimg i1">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg i2">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item">
+                <div class="itimg i1">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg i2">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">T-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item">
+                <div class="itimg i1">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 16999</h4>
+                 <center><button id="add">Add to cart</button><button id="buy">By Now</button></center> 
+                </div>
+               </div>
+
+
+            </div>
+
+
+
+
+         </section>
+
+         <section class="el">
+          <div class="elec">
+            <h5 class="gold">Upgrade Your Tech</h5>
+            <h2>Top Electronics</h2>
+            <h2>for a <span class="gold">Smarter You</span></h2>
+            <p>Get the latest phones, laptops, accessories and more</p>
+            <a href="electronics.html"><button class="shop">Explore All Electronics</button></a>
+          </div>
+        -->
+         
+         </section>
+              <h2 class="out">OUT OF ORDER</h2>
+           <!-- <footer>
+          <aside class="a1">
+             <div class="logo">
+               <h5>AARON <span class="gold">HUB</span></h5> 
+                <h6>TECH &bull; FASHION &bull; LIFESTYLE</h6>
+                </div>
+                <p>Aaron Hub is your one-stop shop for elctronics, fashion and more. Quality products, 
+                  trusted brands, and unbeatable prices 
+                </p>
+
+          <div class="socials">
+            <img src="images/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="">
+            <img src="images/instagram-logo-png-transparent-background-1024x1024-1.png" alt="">
+            <img src="images/gmail-mail-icon-for-web-design-free-png.png" alt="">
+            <img src="images/8dcc7cecbacd2ad8d207d9025000e1ec.jpg" alt="">
+            <img src="" alt="">
+          </div>
+             </aside>
+          <aside>
+            <ul>
+              <h4>Quick Links</h4>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>Shop</li></a>
+              <a href="#"><li>About Us</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="#"><li>FAQs</li></a>
+            </ul>
+          </aside>
+          <aside>
+             <ul>
+              <h4>Categories</h4>
+              <a href="#"><li>Electronics</li></a>
+              <a href="#"><li>Phones & Tablets</li></a>
+              <a href="#"><li>Laptops & Computers</li></a>
+              <a href="#"><li>Accessories</li></a>
+              <a href="#"><li>Fashion</li></a>
+              <a href="#"><li>Footwear</li></a>
+            </ul>
+          </aside>
+          <aside>
+             <ul>
+              <h4>Quick Links</h4>
+              <a href="#"><li>Track Order</li></a>
+              <a href="#"><li>Shipping Policy</li></a>
+              <a href="#"><li>Return & Refund</li></a>
+              <a href="#"><li>Terms & Conditions</li></a>
+              <a href="#"><li>Privacy Policy</li></a>
+            </ul>
+          </aside>
+          <aside class="al">
+            <h6>&copy;2025 Aaron Hub, All rights reserved.</h6>
+            <div class="me"><h5>POWERED BY</h5> <img src="images/file_00000000525c822fb92fd01c8632b831.png" alt=""></div>
+          </aside>
+         </footer>
+         -->
+       
+    </div>
+
+
+
+
+    <div class="fashionii">
+
+       <div class="cat" id="catt">
+            <h4>Categories</h4>
+            <button id="all" class="active" onclick="alli()">All</button>
+            <button id="top" onclick="showTops()">top</button>
+            <button id="brac" onclick="showBrac()">bracelet</button>
+            <button id="cap" onclick="showCap()" >cap</button>
+            <button id="foot" onclick="showFoot()">footwear</button>
+        </div>
+    
+     <section class="sec3 fashi">
+            <h4>FASHION </h4>
+            <div class="collection itemcol">
+
+               <div class="item foot">
+                <div class="itimg f1" onclick="openCard('X -Slides', 'black Leather', '250', 'images/IMG_0647.JPG',)">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X - Slides</h4>
+                  <br>
+                  <h4 class="price">GH 250.00</h4>
+                 <center><!--<button  class="add" onclick="addItem('images/IMG_0647.JPG', 'X - Slides', '250', this)">Add to cart</button>--><button id="buy" onclick="order('X -Slides', 'black Leather', '250')">By Now</button></center> 
+                </div>
+               </div>
+
+               <div class="item foot">
+                <div class="itimg f10" onclick="openCard('Numeris Shoe', 'Stylish', '450', 'images/IMG_0673.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Numeris Shoe</h4>
+                  <br>
+                  <h4 class="price">GHS 450.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('Numeris Shoe', 'Stylish', '450')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item top">
+                <div class="itimg f9" onclick="openCard('HACKETT - Shirt', 'White Hackett', '150', 'images/IMG_0683.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Hackett-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('HACKETT - Shirt', 'White Hackett', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item top">
+                <div class="itimg f8" onclick="openCard('POLO - Shirt', 'Green -White Hackett', '150', 'images/IMG_0684.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">HACKETT - Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('POLO - Shirt', 'Green -White Hackett', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+              
+
+              <div class="item foot">
+                <div class="itimg f3" onclick="openCard('X-Slides', 'very comfy', '250', 'images/IMG_0649.JPG', this )">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X-Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250.00</h4>
+                 <center><!--<button id="add" onclick="addItem('images/IMG_0649.JPG', 'X-Slides', '200', this)">Add to cart</button>--><button id="buy" onclick="order('X-Slides', 'very comfy', '250')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item">
+                <div class="itimg f2" onclick="openCard('X - Slides', 'shade of green haIry leather', '250', 'images/IMG_0646.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X -Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250.00</h4>
+                 <center><!--<button  class="add" onclick="addItem('images/IMG_0646.JPG', 'X - Slides', '250', this)">Add to cart</button>--><button id="buy" onclick="order('X - Slides', 'shade of green haIry leather')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item foot">
+                <div class="itimg f4" onclick="openCard('X - Slides', 'comfortable to wear', '250', 'images/IMG_0650.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X -Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('X - Slides', 'comfortable to wear', '250')">By Now</button></center> 
+                </div>
+               </div>
+             
+                  <div class="item top">
+                <div class="itimg f5" onclick="openCard('POLO - Shirt', 'grey polo', '150', 'images/IMG_0686.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">POLO -Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('POLO - Shirt', 'grey polo', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item top">
+                <div class="itimg f6" onclick="openCard('POLO - Shirt', 'red polo', '150', 'images/IMG_0685.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">POLO - Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('POLO - Shirt', 'red polo', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item foot">
+                <div class="itimg f7" onclick="openCard('POLO - Shirt', 'cream Birkenstock', '150', 'images/IMG_0677.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Cream Birkenstock</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('POLO - Shirt', 'cream Birkenstock', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item cap">
+                <div class="itimg f11" onclick="openCard('Cap', 'Limited Edition', '50', 'images/IMG_0661.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'Limited Edition', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item top">
+                <div class="itimg f12" onclick="openCard('Lacoste', 'Black, Ferrari', '150', 'images/IMG_0682.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Lacoste</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('Lacoste', 'Black, Ferrari', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item foot">
+                <div class="itimg f13" onclick="openCard('X-slides', 'cool', '250', 'images/IMG_0653.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X-Slides</h4>
+                  <br>
+                  <h4 class="price">250.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('X-slides', 'cool', '250')">By Now</button></center> 
+                </div>
+               </div>
+                  
+               <div class="item bag">
+                <div class="itimg f14" onclick="openCard('Bag', 'Fashion Bag', '200', 'images/IMG_0656.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bag</h4>
+                  <br>
+                  <h4 class="price">GHS 200.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Bag', 'Fashion Bag', '200')">By Now</button></center> 
+                </div>
+               </div>
+
+     
+                <div class="item cap">
+                <div class="itimg f15" onclick="openCard('Cap', '(all eyes on me) blue + white', '50', 'images/IMG_0667.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button  class="add" onclick="addItem('images/IMG_0667.JPG', 'cap', '50', this)">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', '(all eyes on me) blue + white', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+
+                <div class="item cap">
+                <div class="itimg f16" onclick="openCard('Cap', 'Red Limited EDITION', '50', 'images/IMG_0666.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'Red Limited EDITION', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item top">
+                <div class="itimg f17" onclick="openCard('Lacoste', 'Blue lacoste -Ferrari', '150', 'images/IMG_0678.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Lacoste</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('Lacoste', 'Blue lacoste -Ferrari', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                 <div class="item top">
+                <div class="itimg f18" onclick="openCard('Polo - Shirt', 'pink Polo', '150', 'images/IMG_0681.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">POLO-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('Polo - Shirt', 'pink Polo', '150')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item top">
+                 <div class="itimg f19" onclick="openCard('HACKETT - Shirt', 'red hackett', '150', 'images/IMG_0679.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">HACKETT-Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('HACKETT - Shirt', 'red hackett')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item foot">
+                 <div class="itimg f20" onclick="openCard('Numeris Shoe`', 'Perfect Fit', '450', 'images/IMG_0672.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Numeris Shoe</h4>
+                  <br>
+                  <h4 class="price">GHS 450.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('Numeris Shoe`', 'Perfect Fit', '450')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item top">
+                <div class="itimg f21" onclick="openCard('POLO - Shirt', 'Blue - white and red markings', '150', 'images/IMG_0680.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">POLO - Shirt</h4>
+                  <br>
+                  <h4 class="price">GHS 150.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="ordershir('POLO - Shirt', 'Blue - white and red markings', '150')">By Now</button></center> 
+                </div>
+               </div>
+             
+                  <div class="item foot">
+                 <div class="itimg f22" onclick="openCard('Birkenstock', 'Blue Lux', '500', 'images/IMG_0676.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Blue Birkenstock</h4>
+                  <br>
+                  <h4 class="price">GHS 500.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('Birkenstock', 'Blue Lux', '500')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item foot">
+                 <div class="itimg f23" onclick="openCard('Birkenstock', 'Black Lux', '500', 'images/IMG_0674.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Black Birkenstock</h4>
+                  <br>
+                  <h4 class="price">GHS 500.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="origin('Birkenstock', 'Black Lux', '500',)">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item cap">
+                <div class="itimg f24" onclick="openCard('Cap', '+233', '50', 'images/IMG_0671.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">+233 Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', '+233', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item foot">
+                <div class="itimg f25" onclick="openCard('Brown Birkenstock', 'Brown Lux', '50', 'images/IMG_0675.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Brown Birkenstock</h4>
+                  <br>
+                  <h4 class="price">GHS 500.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('Brown Birkenstock', 'Brown Lux', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item cap">
+                <div class="itimg f26" onclick="openCard('Cap', 'they come they go', '50', 'images/IMG_0669.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'they come they go', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item cap">
+                <div class="itimg f27" onclick="openCard('Cap', 'Wanted, 5 stars', '50', 'images/IMG_0666.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'Wanted, 5 stars', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item cap">
+                <div class="itimg f28" onclick="openCard('Cap', 'I dont care', '50', 'images/IMG_0668.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'I dont care', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+               <div class="item cap">
+                <div class="itimg f29" onclick="openCard('Cap', 'Now - Time', '50', 'images/IMG_0663.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">NOW Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'Now - Time', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item brace">
+                               <div class="itimg f30" onclick="openCard('bracelet', 'Silver fashion', '15', 'images/IMG_0655.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Bracelet</h4>
+                  <br>
+                  <h4 class="price">GHS 15.00</h4>
+                 <center><!--<button id="add" onclick="addItem()">Add to cart</button>--><button id="buy" onclick="orderNS('bracelet', 'Silver fashion', '15')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item foot">
+                <div class="itimg f31" onclick="openCard('X- Slide', 'Brown Leather', '250', 'images/IMG_0654.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X -Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('X- Slide', 'Brown Leather', '250')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item cap">
+                <div class="itimg f32" onclick="openCard('Cap', 'Antisocial', '50', 'images/IMG_0659.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">AntiSocial Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'Antisocial', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item foot">
+                <div class="itimg f33" onclick="openCard('X -Slides', 'black hairy leather', '50', 'images/IMG_0652.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">X -Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('X -Slides', 'black hairy leather', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item cap">
+                <div class="itimg f34" onclick="openCard('Cap', 'black and white', '50', 'images/IMG_0657.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'black and white', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item foot">
+                <div class="itimg f35" onclick="openCard('X - Slides', 'White X', '250', 'images/IMG_0651.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">x - Slides</h4>
+                  <br>
+                  <h4 class="price">GHS 250.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="order('X - Slides', 'White X', '250')">By Now</button></center> 
+                </div>
+               </div>
+             
+                  <div class="item cap">
+                <div class="itimg f36" onclick="openCard('Cap', '+233', '50', 'images/IMG_0662.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">+233 Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', '+233', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item cap">
+                <div class="itimg f37" onclick="openCard('Cap', 'cards design', '50', 'images/IMG_0665.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'cards design', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item cap">
+                <div class="itimg f38" onclick="openCard('Cap', '50%idk - 50% idc', '50', 'images/IMG_0658.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">idc - idk Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', '50%idk - 50% idc', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                <div class="item cap">
+                <div class="itimg f39" onclick="openCard('Cap', 'Gods Plan', '50', 'images/IMG_0664.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">God's plan Cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'Gods Plan', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+                  <div class="item cap">
+                <div class="itimg f49" onclick="openCard('Cap', 'pixel brown heart', '50', 'images/IMG_0660.JPG')">
+                  
+                </div>
+                <div class="ittxt">
+                  <h4 class="itname">cap</h4>
+                  <br>
+                  <h4 class="price">GHS 50.00</h4>
+                 <center><!--<button id="add">Add to cart</button>--><button id="buy" onclick="orderNS('Cap', 'pixel brown heart', '50')">By Now</button></center> 
+                </div>
+               </div>
+
+              
+            </div>
+
+
+            
+         </section>
+
+         <section class="el">
+          <div class="elec fash">
+            <h5 class="gold">Get Dressed Better</h5>
+            <h2>Perfect Fashion</h2>
+            <h2>for a <span class="gold">Smarter You</span></h2>
+            <p>Get the latest phones, laptops, accessories and more</p>
+            <a href="#catt"><button class="shop" onclick="opFashPg()">Explore All Fashion</button></a>
+          </div>
+          
+         </section>
+
+            <footer>
+          <aside class="a1">
+             <div class="logo">
+               <h2>AARON <span class="gold">HUB</span></h2> 
+                <h6>TECH &bull; FASHION &bull; LIFESTYLE</h6>
+                </div>
+                <p>Aaron Hub is your one-stop shop for elctronics, fashion and more. Quality products, 
+                  trusted brands, and unbeatable prices 
+                </p>
+
+          <div class="socials">
+            <img src="images/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="">
+            <img src="images/instagram-logo-png-transparent-background-1024x1024-1.png" alt="">
+            <img src="images/gmail-mail-icon-for-web-design-free-png.png" alt="">
+            <img src="images/8dcc7cecbacd2ad8d207d9025000e1ec.jpg" alt="">
+            <img src="" alt="">
+          </div>
+             </aside>
+          <aside>
+            <ul>
+              <h4>Quick Links</h4>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>Shop</li></a>
+              <a href="#"><li>About Us</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="#"><li>FAQs</li></a>
+            </ul>
+          </aside>
+          <aside>
+             <ul>
+              <h4>Categories</h4>
+              <a href="#"><li>Electronics</li></a>
+              <a href="#"><li>Phones & Tablets</li></a>
+              <a href="#"><li>Laptops & Computers</li></a>
+              <a href="#"><li>Accessories</li></a>
+              <a href="#"><li>Fashion</li></a>
+              <a href="#"><li>Footwear</li></a>
+            </ul>
+          </aside>
+          <aside>
+             <ul>
+              <h4>Quick Links</h4>
+              <a href="#"><li>Track Order</li></a>
+              <a href="#"><li>Shipping Policy</li></a>
+              <a href="#"><li>Return & Refund</li></a>
+              <a href="#"><li>Terms & Conditions</li></a>
+              <a href="#"><li>Privacy Policy</li></a>
+            </ul>
+          </aside>
+          <aside class="al">
+            <h6>&copy;2025 Aaron Hub, All rights reserved.</h6>
+            <div class="me"><h5>POWERED BY</h5> <img src="images/file_00000000525c822fb92fd01c8632b831.png" alt="" ></div>
+          </aside>
+         </footer>
+
+    </div>
+
+
+
+    <div class="size" id="ftsize">
+      <h3>SELECT SIZE</h3>
+      <p>This info will be used in making purchases
+         <br>
+         You can make changes by clicking the <span class="gold">SIZES</span> button
+      </p>
+      <h2 class="ssze"></h2>
+         <div class="radios">
+              <label for=""><input type="radio" name="size" value="40">40</label>
+              
+              <label for=""><input type="radio" name="size" value="41">41</label>
+  
+             <label for=""><input type="radio" name="size" value="42">42</label>
+             <label for=""><input type="radio" name="size" value="43">43</label> 
+             <label for=""><input type="radio" name="size" value="44">44</label>
+             <label for=""><input type="radio" name="size" value="45">45</label>
+             <button class="major" onclick="ftsz()">DONE</button>
+            </div>
+    </div>
+
+        <div class="size" id="shirtsize">
+      <h3>SELECT SIZE</h3>
+      <p>This info will be used in making purchases
+         <br>
+         You can make changes by clicking the <span class="gold">SIZES</span> button
+      </p>
+      <h2 class="shsze"></h2>
+         <div class="radios">
+            <label for=""><input type="radio" name="shsize" value="Medium">M</label>
+             <label for=""><input type="radio" name="shsize" value="Large">L</label>
+             <label for=""><input type="radio" name="shsize" value="Xtra - Large">XL</label> 
+             <label for=""><input type="radio" name="shsize" value="2*Xtra - Large">2XL</label>
+             <label for=""><input type="radio" name="shsize" value="3*Xtra - Large">3XL</label>
+             <button class="major" onclick="shsz()">DONE</button>
+            </div>
+    </div>
+</body>
+</html>
