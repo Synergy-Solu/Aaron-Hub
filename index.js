@@ -317,12 +317,12 @@ function showFashFoot() {
 
 
 function order(name, desc, price, image) {
+    imageURL = new URL(image, window.location.href).href
     message = `Hello Aaron Hub, I would like to order:
     product: ${name}
     Description: ${desc}
     price: ${price}
     size:  ${selectedFtSz} 
-    imageURL = new URL(${image}, window.location.href).href
     view Product Image -> ${imageURL}`
    
     phoneNumber = "233266360736"
@@ -333,12 +333,12 @@ function order(name, desc, price, image) {
 
 
 function ordershir(name, desc, price, image) {
+    imageURL = new URL(image, window.location.href).href
     message = `Hello Aaron Hub, I would like to order:
     product: ${name}
     Description: ${desc}
     price: ${price}
     size:  ${selectedShSz}
-    imageURL = new URL(${image}, window.location.href).href
     view Product Image -> ${imageURL} `
     phoneNumber = "233266360736"
     WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
@@ -346,11 +346,11 @@ function ordershir(name, desc, price, image) {
 }
 
 function orderNS(name, desc, price, image) {
+    imageURL = new URL(image, window.location.href).href
     message = `Hello Aaron Hub, I would like to order:
     product: ${name}
     Description: ${desc}
     price: ${price}  
-    imageURL = new URL(${image}, window.location.href).href
     view Product Image -> ${imageURL}`
     
     phoneNumber = "233266360736"
