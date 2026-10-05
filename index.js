@@ -322,7 +322,8 @@ function order(name, desc, price, image) {
     Description: ${desc}
     price: ${price}
     size:  ${selectedFtSz} 
-    view Product Image -> https://synergy-solu.github.io/${image}`
+    imageURL = new URL(image, window.location.href).href
+    view Product Image -> ${imageURL}`
    
     phoneNumber = "233266360736"
     WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
@@ -337,7 +338,8 @@ function ordershir(name, desc, price, image) {
     Description: ${desc}
     price: ${price}
     size:  ${selectedShSz}
-    view Product Image -> https://synergy-solu.github.io/${image} `
+    imageURL = new URL(image, window.location.href).href
+    view Product Image -> ${imageURL} `
     phoneNumber = "233266360736"
     WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(WhatsappUrl, "_blank");
@@ -348,7 +350,8 @@ function orderNS(name, desc, price, image) {
     product: ${name}
     Description: ${desc}
     price: ${price}  
-    view Product Image -> https://synergy-solu.github.io/${image}`
+    imageURL = new URL(image, window.location.href).href
+    view Product Image -> ${imageURL}`
     
     phoneNumber = "233266360736"
     WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
