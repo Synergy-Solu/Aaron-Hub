@@ -322,7 +322,7 @@ function order(name, desc, price, image) {
     Description: ${desc}
     price: ${price}
     size:  ${selectedFtSz} 
-    imageURL = new URL(image, window.location.href).href
+    imageURL = new URL(${image}, window.location.href).href
     view Product Image -> ${imageURL}`
    
     phoneNumber = "233266360736"
@@ -338,7 +338,7 @@ function ordershir(name, desc, price, image) {
     Description: ${desc}
     price: ${price}
     size:  ${selectedShSz}
-    imageURL = new URL(image, window.location.href).href
+    imageURL = new URL(${image}, window.location.href).href
     view Product Image -> ${imageURL} `
     phoneNumber = "233266360736"
     WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
@@ -350,7 +350,7 @@ function orderNS(name, desc, price, image) {
     product: ${name}
     Description: ${desc}
     price: ${price}  
-    imageURL = new URL(image, window.location.href).href
+    imageURL = new URL(${image}, window.location.href).href
     view Product Image -> ${imageURL}`
     
     phoneNumber = "233266360736"
