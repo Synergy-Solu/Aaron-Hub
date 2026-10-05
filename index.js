@@ -316,35 +316,40 @@ function showFashFoot() {
 }
 
 
-function order(name, desc, price) {
+function order(name, desc, price, image) {
     message = `Hello Aaron Hub, I would like to order:
     product: ${name}
     Description: ${desc}
     price: ${price}
-    size:  ${selectedFtSz} `
-    phoneNumber = "233599728595"
-    WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-    window.open(WhatsappUrl, "_blank");
-}
-
-
-
-function ordershir(name, desc, price) {
-    message = `Hello Aaron Hub, I would like to order:
-    product: ${name}
-    Description: ${desc}
-    price: ${price}
-    size:  ${selectedShSz} `
+    size:  ${selectedFtSz} 
+    view Product Image -> https://synergy-solu.github.io/${image}`
+   
     phoneNumber = "233266360736"
     WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(WhatsappUrl, "_blank");
 }
 
-function orderNS(name, desc, price) {
+
+
+function ordershir(name, desc, price, image) {
     message = `Hello Aaron Hub, I would like to order:
     product: ${name}
     Description: ${desc}
-    price: ${price}  `
+    price: ${price}
+    size:  ${selectedShSz}
+    view Product Image -> https://synergy-solu.github.io/${image} `
+    phoneNumber = "233266360736"
+    WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    window.open(WhatsappUrl, "_blank");
+}
+
+function orderNS(name, desc, price, image) {
+    message = `Hello Aaron Hub, I would like to order:
+    product: ${name}
+    Description: ${desc}
+    price: ${price}  
+    view Product Image -> https://synergy-solu.github.io/${image}`
+    
     phoneNumber = "233266360736"
     WhatsappUrl =`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(WhatsappUrl, "_blank");
